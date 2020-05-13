@@ -1,0 +1,6 @@
+framework module Pods_SwiftUIGitHubApp {
+  umbrella header "Pods-SwiftUIGitHubApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
