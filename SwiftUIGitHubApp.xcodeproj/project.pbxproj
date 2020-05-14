@@ -18,7 +18,6 @@
 		CA71CC11246AE4F200EAEE07 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC10246AE4F200EAEE07 /* DownloadService.swift */; };
 		CA71CC13246AE51700EAEE07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC12246AE51700EAEE07 /* Constants.swift */; };
 		CA71CC21246BC99700EAEE07 /* RepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC20246BC99700EAEE07 /* RepoCell.swift */; };
-		CA71CC2A246BD40900EAEE07 /* MainImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC29246BD40900EAEE07 /* MainImageView.swift */; };
 		CA71CC2D246BD53000EAEE07 /* image_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CA71CC2C246BD53000EAEE07 /* image_placeholder.png */; };
 		CA71CC34246BF1DB00EAEE07 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CC33246BF1DB00EAEE07 /* Colors.swift */; };
 /* End PBXBuildFile section */
@@ -39,7 +38,6 @@
 		CA71CC10246AE4F200EAEE07 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		CA71CC12246AE51700EAEE07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CA71CC20246BC99700EAEE07 /* RepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoCell.swift; sourceTree = "<group>"; };
-		CA71CC29246BD40900EAEE07 /* MainImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainImageView.swift; sourceTree = "<group>"; };
 		CA71CC2C246BD53000EAEE07 /* image_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_placeholder.png; sourceTree = "<group>"; };
 		CA71CC33246BF1DB00EAEE07 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				CA71CC20246BC99700EAEE07 /* RepoCell.swift */,
-				CA71CC29246BD40900EAEE07 /* MainImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 			files = (
 				CA71CBF6246AE36900EAEE07 /* AppDelegate.swift in Sources */,
 				CA71CC34246BF1DB00EAEE07 /* Colors.swift in Sources */,
-				CA71CC2A246BD40900EAEE07 /* MainImageView.swift in Sources */,
 				CA71CC21246BC99700EAEE07 /* RepoCell.swift in Sources */,
 				CA71CBF8246AE36900EAEE07 /* SceneDelegate.swift in Sources */,
 				CA71CBFA246AE36900EAEE07 /* ContentView.swift in Sources */,
