@@ -91,7 +91,6 @@
 				CA71CC0B246AE3BD00EAEE07 /* Utilities */,
 				CA71CC0A246AE3AE00EAEE07 /* Views */,
 				CA71CC09246AE37A00EAEE07 /* SupportingFiles */,
-				CA71CBF9246AE36900EAEE07 /* ContentView.swift */,
 				CA71CBFD246AE36A00EAEE07 /* Preview Content */,
 			);
 			path = SwiftUIGitHubApp;
@@ -119,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				CA71CC20246BC99700EAEE07 /* RepoCell.swift */,
+				CA71CBF9246AE36900EAEE07 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
