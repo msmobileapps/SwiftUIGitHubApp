@@ -9,6 +9,9 @@
 import Foundation
 
 //MARK: - URLs
+
+
+//enum
 let TRENDING_REPO_URL = "https://api.github.com/search/repositories?q=Swift&sort=stars&order=desc"
 let SEARCH_URL = "https://api.github.com/search/repositories?q="
 let STARS_DES_SEGMENT = "&sort=stars&order=desc"

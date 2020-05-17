@@ -8,24 +8,24 @@
 
 import SwiftUI
 
-class Repo: ObservableObject {
+class Repo: Identifiable {
 
+    let id = UUID()
     let image: UIImage?
     let name: String
     let description: String
     let numberOfForks: Int
     let language: String
     let contributers: Int
-    let repoUrl: String
 
-    init(image: UIImage, name: String, description: String, numberOfForks: Int, language: String, contributers: Int, repoUrl: String) {
+
+    init(image: UIImage, name: String, description: String, numberOfForks: Int, language: String, contributers: Int) {
         self.image = image
         self.name = name
         self.description = description
         self.numberOfForks = numberOfForks
         self.language = language
         self.contributers = contributers
-        self.repoUrl = repoUrl
     }
 }
 

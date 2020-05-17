@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 import AlamofireImage
+import Combine
 
 class DownloadService {
 
@@ -50,8 +51,11 @@ class DownloadService {
         downloadTrendingRepoDictArray { (trendingRepoDictArray) in
             for dict in trendingRepoDictArray {
                 self.downloadTrendingRepo(fromDict: dict, completion: { (repo) in
-                    reposArray.append(repo)
-                    completion(reposArray)
+                    DispatchQueue.main.async {
+                        reposArray.append(repo)
+                        completion(reposArray)
+                    }
+
                 })
             }
 
@@ -65,15 +69,17 @@ class DownloadService {
             let description = dict["description"] as? String,
             let numberOfForks = dict["forks_count"] as? Int,
             let language = dict["language"] as? String,
-            let repoUrl = dict["html_url"] as? String,
             let contributorsUrl = dict["contributors_url"] as? String else {
                 return
         }
 
         self.downloadContributorsData(for: contributorsUrl) { (contributions) in
             self.downloadImage(for: avatarUrl) { (image) in
-                let repo = Repo( image: image, name: name, description: description, numberOfForks: numberOfForks, language: language, contributers: contributions, repoUrl: repoUrl)
-                completion(repo)
+                let repo = Repo( image: image, name: name, description: description, numberOfForks: numberOfForks, language: language, contributers: contributions)
+                DispatchQueue.main.async {
+                    completion(repo)
+                }
+
             }
 
         }
@@ -98,7 +104,9 @@ class DownloadService {
                 guard let json = value as? dictionary else { return }
                 if !json.isEmpty {
                     let contributions = json.count
-                    completion(contributions)
+                    DispatchQueue.main.async {
+                        completion(contributions)
+                    }
                 }
             case .failure(let error):
                 print(error.localizedDescription)

@@ -92,6 +92,6 @@ struct RepoCell: View {
 
 struct RepoCell_Previews: PreviewProvider {
     static var previews: some View {
-        RepoCell(repoModel: Repo(image: UIImage(named: "image_placeholder")!, name: "Swift", description: "Best programming language ever!", numberOfForks: 15, language: "Swift", contributers: 112, repoUrl: ""))
+        RepoCell(repoModel: Repo(image: UIImage(named: "image_placeholder")!, name: "Swift", description: "Best programming language ever!", numberOfForks: 15, language: "Swift", contributers: 112))
     }
 }

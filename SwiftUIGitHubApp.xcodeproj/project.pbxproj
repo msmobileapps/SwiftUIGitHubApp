@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9D54702EF5E60919923B042F /* Pods_SwiftUIGitHubApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34C5940079E910DA07ED9D8D /* Pods_SwiftUIGitHubApp.framework */; };
+		CA58CD1D247110480090D207 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58CD1C247110480090D207 /* RepoViewModel.swift */; };
+		CA58CD1F24713F880090D207 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58CD1E24713F880090D207 /* Loader.swift */; };
 		CA71CBF6246AE36900EAEE07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CBF5246AE36900EAEE07 /* AppDelegate.swift */; };
 		CA71CBF8246AE36900EAEE07 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CBF7246AE36900EAEE07 /* SceneDelegate.swift */; };
 		CA71CBFA246AE36900EAEE07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA71CBF9246AE36900EAEE07 /* ContentView.swift */; };
@@ -26,6 +28,8 @@
 		14F915A59DEB38E15E6DD85D /* Pods-SwiftUIGitHubApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGitHubApp.debug.xcconfig"; path = "Target Support Files/Pods-SwiftUIGitHubApp/Pods-SwiftUIGitHubApp.debug.xcconfig"; sourceTree = "<group>"; };
 		34C5940079E910DA07ED9D8D /* Pods_SwiftUIGitHubApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftUIGitHubApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2C62BC10385292E3D83E7E /* Pods-SwiftUIGitHubApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftUIGitHubApp.release.xcconfig"; path = "Target Support Files/Pods-SwiftUIGitHubApp/Pods-SwiftUIGitHubApp.release.xcconfig"; sourceTree = "<group>"; };
+		CA58CD1C247110480090D207 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		CA58CD1E24713F880090D207 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
 		CA71CBF2246AE36900EAEE07 /* SwiftUIGitHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIGitHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA71CBF5246AE36900EAEE07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA71CBF7246AE36900EAEE07 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +66,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CA58CD1B247110220090D207 /* View models */ = {
+			isa = PBXGroup;
+			children = (
+				CA58CD1C247110480090D207 /* RepoViewModel.swift */,
+			);
+			path = "View models";
+			sourceTree = "<group>";
+		};
 		CA71CBE9246AE36900EAEE07 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 		CA71CBF4246AE36900EAEE07 /* SwiftUIGitHubApp */ = {
 			isa = PBXGroup;
 			children = (
+				CA58CD1B247110220090D207 /* View models */,
 				CA71CC32246BF1CA00EAEE07 /* Extensions */,
 				CA71CC2B246BD4EF00EAEE07 /* Resources */,
 				CA71CC24246BD11700EAEE07 /* App */,
@@ -119,6 +132,7 @@
 			children = (
 				CA71CC20246BC99700EAEE07 /* RepoCell.swift */,
 				CA71CBF9246AE36900EAEE07 /* ContentView.swift */,
+				CA58CD1E24713F880090D207 /* Loader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,6 +314,8 @@
 				CA71CBF6246AE36900EAEE07 /* AppDelegate.swift in Sources */,
 				CA71CC34246BF1DB00EAEE07 /* Colors.swift in Sources */,
 				CA71CC21246BC99700EAEE07 /* RepoCell.swift in Sources */,
+				CA58CD1D247110480090D207 /* RepoViewModel.swift in Sources */,
+				CA58CD1F24713F880090D207 /* Loader.swift in Sources */,
 				CA71CBF8246AE36900EAEE07 /* SceneDelegate.swift in Sources */,
 				CA71CBFA246AE36900EAEE07 /* ContentView.swift in Sources */,
 				CA71CC0F246AE43900EAEE07 /* Repo.swift in Sources */,
